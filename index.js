@@ -3,10 +3,9 @@ const Promise = require("promise")
 const querystring = require("querystring")
 
 const BASEURL = "https://neutrinoapi.com/"
-function Neutrino(clientId, apiKey){
-  this.clientId = clientId
-  this.apiKey = apiKey
-  this.config = {"user-id":clientId, "api-key": apiKey }
+function Neutrino(config){
+  //this.config = {"user-id":clientId, "api-key": apiKey }
+  this.config = config
 }
 
 
