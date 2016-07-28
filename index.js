@@ -49,7 +49,7 @@ Neutrino.prototype.binCode=function(options){
   if (options['bin-number'])
     return this.request("bin-lookup", options)
   else
-    Promise.resolve({})
+    return Promise.resolve({})
 
 } 
 
@@ -57,14 +57,14 @@ Neutrino.prototype.ipBlockList = function(options){
   if (options.ip)
     return this.request("ip-blocklist", options)
   else
-    Promise.resolve({})
+    return Promise.resolve({})
 }
 
 Neutrino.prototype.ipInfo = function(options){
   if (options.ip)
     return this.request("ip-info", options)
   else
-    Promise.resolve({})
+  return   Promise.resolve({})
 }
 
 
@@ -72,7 +72,7 @@ Neutrino.prototype.HLRLookup = function(options){
   if (options.number)
    return this.request("hlr-lookup", options)
   else 
-    Promise.resolve({})
+   return  Promise.resolve({})
 }
 
 
